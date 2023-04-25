@@ -4,3 +4,5 @@ CREATE TABLE employees (
     age INTEGER CHECK (age > 0),
     salary NUMERIC(10,2) CHECK (salary >= 0)
 );
+
+ALTER TABLE employees ADD COLUMN days_off INTEGER;
